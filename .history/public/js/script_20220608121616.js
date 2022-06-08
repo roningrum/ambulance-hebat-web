@@ -1,6 +1,6 @@
 const navbar = document.querySelector('nav');
 window.addEventListener('scroll', function(){
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     if(this.window.scrollY > 1){
         navbar.classList.replace('bg-transparent', 'nav-color');
     }
@@ -22,9 +22,7 @@ counter.forEach(counter =>{
         const c = +counter.innerText;
 
         const increment = target/200;
-        if(c < target){
-            counter.innerText=`${Math.ceil(c + increment)}`;
-        }
+        console.log(increment);
     };
     updateCounter();
 });
