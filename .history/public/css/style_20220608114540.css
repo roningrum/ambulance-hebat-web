@@ -231,10 +231,10 @@ body{
 }
 
 .counter{
-    font-size: 56px;
+    font-size: 60px;
     margin-top: 8px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .counter-headline p{

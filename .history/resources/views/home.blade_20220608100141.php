@@ -31,7 +31,7 @@
                 layanan gratis yang disediakan oleh Pemerintah Kota Semarang, dibawah asuhan Dinas Kesehatan Kota Semarang
               </p>
               <button class="button-more">
-                <a href="/about"></a>
+                <a href="#"></a>
                 Selengkapnya</button>
             </div>
           </div>
@@ -41,7 +41,7 @@
         <!--service-->
   <section id="service">
     <div class="container">
-      <div class="row">
+      <div class="row g-4">
         <div class="col-12 text-center service-headline">
           <h2>Keunggulan Ambulance Hebat</h2>
           <p>Ambulance Hebat siap melayani karena</p>
@@ -100,7 +100,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-4">
               <p>Gawat Darutat</p>
-              <div class="counter" data-target="1500"></div>
+              <h1>1941</h1>
             </div>
             <div class="col-md-4 col-sm-4">
               <p>Maternal Neonatal</p>

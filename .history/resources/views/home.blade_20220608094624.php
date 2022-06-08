@@ -21,7 +21,7 @@
     <!-- section short description -->
     <section id="desc">
         <div class="container col-xxl-6 px-3 py-5">
-          <div class="row flex-lg-row align-items-center g-5 desc-info">
+          <div class="row flex-lg-row align-items-center g-4 desc-info">
             <div class=" col-lg-6">
               <img src="imgs/foto-aha1.png" width="100%" class="img-fluid"alt="">
             </div>
@@ -31,7 +31,7 @@
                 layanan gratis yang disediakan oleh Pemerintah Kota Semarang, dibawah asuhan Dinas Kesehatan Kota Semarang
               </p>
               <button class="button-more">
-                <a href="/about"></a>
+                <a href="#"></a>
                 Selengkapnya</button>
             </div>
           </div>
@@ -100,7 +100,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-4">
               <p>Gawat Darutat</p>
-              <div class="counter" data-target="1500"></div>
+              <h1>1941</h1>
             </div>
             <div class="col-md-4 col-sm-4">
               <p>Maternal Neonatal</p>
