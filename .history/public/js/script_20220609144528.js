@@ -13,7 +13,12 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
 });
 
-const counters = document.querySelectorAll('.counter');
+$(window).scroll(updateCounter());
+
+function startCounter(){
+    let scrollY = (window.scrollY || document.documentElement.scrollTop) + window.innerHeight;
+    
+    const counters = document.querySelectorAll('.counter');
 
 counters.forEach((counter) => {
     counter.innerHTML = '0';
@@ -23,7 +28,7 @@ counters.forEach((counter) => {
         const increment = target / 200;
         console.log(increment);
 
-        if(c < target){
+        if(c < target && scrollY > counters){
             counter.innerText =`${ Math.ceil(c + increment)}`;
             setTimeout(updateCounter, 1);
         } else{
@@ -32,3 +37,6 @@ counters.forEach((counter) => {
     };
     updateCounter();
 });
+}
+
+

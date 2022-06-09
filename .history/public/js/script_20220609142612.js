@@ -9,9 +9,11 @@ window.addEventListener('scroll', function(){
     }
 });
 
-$(document).ready(function(){
-    $('html, body').scrollTop(0);
-});
+// $(document).ready(function(){
+//     $('html, body').scrollTop(0);
+// });
+
+$(window).scroll(updateCounter());
 
 const counters = document.querySelectorAll('.counter');
 
