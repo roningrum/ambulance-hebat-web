@@ -13,7 +13,12 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
 });
 
-const counters = document.querySelectorAll('.counter');
+$(window).scroll(updateCounter());
+
+function startCounter(){
+    let scrollY = (window.scrollY || document.documentElement.scrollTop) + window.innerHeight;
+    
+    const counters = document.querySelectorAll('.counter');
 
 counters.forEach((counter) => {
     counter.innerHTML = '0';
@@ -32,3 +37,9 @@ counters.forEach((counter) => {
     };
     updateCounter();
 });
+    if(scrollY > counters){
+        updateCounter();
+    }
+}
+
+
