@@ -175,7 +175,6 @@ body{
 }
 
 .card-layanan{
-    width: 100%;
     height: 450px;
     background-color: #FFE6E6;
     border-radius: 10px;
@@ -228,13 +227,6 @@ body{
     color: #fff;
     line-height: 58px;
     letter-spacing: 0em;
-}
-
-.counter{
-    font-size: 56px;
-    margin-top: 8px;
-    color: #fff;
-    font-weight: 600;
 }
 
 .counter-headline p{

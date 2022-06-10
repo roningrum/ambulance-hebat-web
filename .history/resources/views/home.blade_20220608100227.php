@@ -23,16 +23,16 @@
         <div class="container col-xxl-6 px-3 py-5">
           <div class="row flex-lg-row align-items-center g-5 desc-info">
             <div class=" col-lg-6">
-              <img src="imgs/foto-aha1.png" width="100%" class="img-fluid"alt="">
-            </div>
-            <div class=" col-lg-6">
               <h1>Ambulance Hebat SiCepat</h1>
               <p>Layanan emergenci untuk penangan kasus kegawatdaruratan di Kota Semarang. Ambulan hebat adalah salah satu
                 layanan gratis yang disediakan oleh Pemerintah Kota Semarang, dibawah asuhan Dinas Kesehatan Kota Semarang
               </p>
               <button class="button-more">
-                <a href="/about"></a>
+                <a href="#"></a>
                 Selengkapnya</button>
+            </div>
+            <div class=" col-lg-6">
+              <img src="imgs/foto-aha1.png" width="100%" class="img-fluid"alt="">
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
         <!--service-->
   <section id="service">
     <div class="container">
-      <div class="row">
+      <div class="row g-3">
         <div class="col-12 text-center service-headline">
           <h2>Keunggulan Ambulance Hebat</h2>
           <p>Ambulance Hebat siap melayani karena</p>
@@ -100,7 +100,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-4">
               <p>Gawat Darutat</p>
-              <div class="counter" data-target="500"></div>
+              <h1>1941</h1>
             </div>
             <div class="col-md-4 col-sm-4">
               <p>Maternal Neonatal</p>

@@ -230,13 +230,6 @@ body{
     letter-spacing: 0em;
 }
 
-.counter{
-    font-size: 56px;
-    margin-top: 8px;
-    color: #fff;
-    font-weight: 600;
-}
-
 .counter-headline p{
     font-size: 1.25rem;
     font-style: normal;

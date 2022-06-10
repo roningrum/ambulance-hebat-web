@@ -24,7 +24,7 @@
 
 <body>
 
-    @include('partials.navbar_article')
+    @include('partials.navbar')
     
     @yield('content')
 
@@ -34,6 +34,9 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="{{ asset('js/script.js') }}"></script>
+
 </body>
 
 </html>

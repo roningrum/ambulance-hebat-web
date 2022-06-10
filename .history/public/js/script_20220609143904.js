@@ -13,6 +13,15 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
 });
 
+$(window).scroll(updateCounter());
+
+function startCounter(){
+    let scrollY = (window.scrollY || document.documentElement.scrollTop) + window.innerHeight;
+    if(scrollY > counters){
+        updateCounter();
+    }
+}
+
 const counters = document.querySelectorAll('.counter');
 
 counters.forEach((counter) => {

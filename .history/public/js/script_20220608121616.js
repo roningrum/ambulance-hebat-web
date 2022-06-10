@@ -1,6 +1,6 @@
 const navbar = document.querySelector('nav');
 window.addEventListener('scroll', function(){
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     if(this.window.scrollY > 1){
         navbar.classList.replace('bg-transparent', 'nav-color');
     }
@@ -13,22 +13,17 @@ $(document).ready(function(){
     $('html, body').scrollTop(0);
 });
 
-const counters = document.querySelectorAll('.counter');
+const counter = document.querySelectorAll('counter');
+counter.forEach(counter =>{
+    counter.innerText='0';
 
-counters.forEach((counter) => {
-    counter.innerHTML = '0';
-    const updateCounter = () => {
+    const updateCounter= () => {
         const target = +counter.getAttribute('data-target');
         const c = +counter.innerText;
-        const increment = target / 200;
-        console.log(increment);
 
-        if(c < target){
-            counter.innerText =`${ Math.ceil(c + increment)}`;
-            setTimeout(updateCounter, 1);
-        } else{
-            counter.innerText = target;
-        }
+        const increment = target/200;
+        console.log(increment);
     };
     updateCounter();
 });
+//counter
