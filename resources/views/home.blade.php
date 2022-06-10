@@ -104,17 +104,17 @@
             </div>
             <div class="col-md-4 col-sm-4">
               <p>Maternal Neonatal</p>
-              <h1>85</h1>
+              <div class="counter" data-target="85"></div>
             </div>
             <div class="col-md-4 col-sm-4">
               <p>Bencana</p>
-              <h1>0</h1>
+              <div class="counter" data-target="25"></div>
             </div>
           </div>
           <div class="row mt-5">
             <div class="col-md-4">
               <p>LakaLantas</p>
-              <h1>743</h1>
+              <div class="counter" data-target="743"></div>
             </div>
             <div class="col-md-4">
               <p>Non Gawat Darurat</p>
