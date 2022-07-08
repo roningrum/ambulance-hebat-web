@@ -161,10 +161,9 @@
             layanan gratis yang disediakan oleh Pemerintah Kota Semarang, dibawah asuhan Dinas Kesehatan Kota Semarang
           </p>
           <button class="button-more">
-            <a href="#"></a>
+            <a href='/about' ></a>
             Selengkapnya</button>
         </div>
-
 
       </div>
     </div>
