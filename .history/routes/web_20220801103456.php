@@ -3,7 +3,6 @@
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AskController;
 use App\Http\Controllers\ContactUSController;
-use App\Http\Controllers\FeedbackController;
 use App\Models\Post;
 use App\Models\Category;
 use App\Models\User;
@@ -23,21 +22,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home',[
         "title" =>"home",
-        "active" => 'home'
+        "active" => "home"
     ]);
 });
 Route::get('/about', function () {
     return view('about',[
         "title" =>"about",
-        "active" => 'aboout'
+        "active" => "about"
     ]);
 });
+
+Route::get('/tanya',[AskController::class,'ask']);
 
 Route::get('/artikel',[ArticleController::class,'article']);
 
 Route::get('/baca/{post:slug}',[ArticleController::class, 'read']);
 
-Route::get('/tanya','App\Http\Controllers\FeedbackController@index');
+Route::get('/ask',[AskController::class,'ask']);
 
 Route::get('/contact-us',[ContactUSController::class, 'contactUs']);
 

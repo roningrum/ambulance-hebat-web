@@ -13,7 +13,6 @@ class ArticleController extends Controller
     public function article(){
         return view('articles',[
             "title" =>"All Post",
-            "active"=>'article',
             // "posts" =>Post::all(),
             "posts"=>Post::with(['user','category'])->latest()->get(),
             'categories'=> Category::all()
@@ -25,7 +24,7 @@ class ArticleController extends Controller
     public function read(Post $post){
         return view('article',[
             "title" =>"article",
-            "active"=>'article',
+            "active"=>'article'
             "posts" =>$post
         ]);
     }

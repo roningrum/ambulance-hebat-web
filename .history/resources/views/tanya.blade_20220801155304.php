@@ -22,40 +22,31 @@
               @csrf  
               <div class="row g-3">
                     <div class="col-sm-5">
-                        <label for="name" class="form-label">Nama</label>
-                        <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" placeholder="Isi nama" required value="{{ old('name') }}">
-                        @error('name')
+                        <label for="firstName" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Isi nama" value="" required="">
                         <div class="invalid-feedback">
-                          {{ $message }}
+                          Valid first name is required.
                         </div>
-                        @enderror
                       </div>
                       <div class="col-sm-4">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control @error('name') is-invalid @enderror" id="email" placeholder="Isi Email"required="{{ old('email') }}">
-                        @error('email')
+                        <input type="email" class="form-control" id="email" placeholder="isi email aktif">
                         <div class="invalid-feedback">
-                          {{ $message }}
+                          Please enter a valid email address for shipping updates.
                         </div>
-                        @enderror
                       </div>
                       <div class="col-9">
-                        <label for="subjek" class="form-label">Subjek</label>
-                        <input type="text" class="form-control @error('subjek') is-invalid @enderror"id="subjek" placeholder="Isi Subjek" required="{{ old('subjek') }}">
-                        @error('subjek')
+                        <label for="lastName" class="form-label">Subjek</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                         <div class="invalid-feedback">
-                          {{ $message }}
+                          Valid last name is required.
                         </div>
-                        @enderror
                       </div>
                       <div class="col-9">
-                        <label for="message" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Isi pesan berupa kritik, saran atau pertanyaan soal Ambulance Hebat"></textarea>
-                        @error('subjek')
-                        <div class="invalid-feedback">
-                          {{ $message }}
-                        </div>
-                        @enderror
+                        <div class="form-group">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Isi pesan berupa kritik, saran atau pertanyaan soal Ambulance Hebat"></textarea>
+                          </div>
                       </div>
                 </div>
                 <button class="button-more">

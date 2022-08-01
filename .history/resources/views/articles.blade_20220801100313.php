@@ -18,7 +18,7 @@
                 <div class="col-md-8 pb-4 mb-4">
                     @foreach ($posts as $blog)
                     <article class="blog-post mb-5">
-                        <img src="http://admin-ambulance-hebat-web.test/{{ $blog->img_blog }}" alt="">
+                        <img src="http://admin-ambulance-hebat-web.test/{{ asset($blog->img_blog) }}" alt="">
                         <h2>
                             <a href="/baca/{{ $blog->slug }}" class="title-article"> {{ $blog->title }}</a></h2>
                         <p>{{ $blog->excerpt}}</p>

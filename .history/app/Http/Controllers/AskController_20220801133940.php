@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 class AskController extends Controller
 {
     //ke halaman Tanya Kami
-    // public function ask(){
-    //     return view('tanya',[
-    //         "title" =>"tanya"
-    //     ]);
-    // }
+    public function ask(){
+        return view('tanya',[
+            "title" =>"tanya"
+        ]);
+    }
 }

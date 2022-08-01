@@ -37,7 +37,7 @@ Route::get('/artikel',[ArticleController::class,'article']);
 
 Route::get('/baca/{post:slug}',[ArticleController::class, 'read']);
 
-Route::get('/tanya','App\Http\Controllers\FeedbackController@index');
+Route::get('/feedback','App\Http\Controllers\FeedbackController@index');
 
 Route::get('/contact-us',[ContactUSController::class, 'contactUs']);
 

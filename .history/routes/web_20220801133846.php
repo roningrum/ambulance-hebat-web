@@ -23,21 +23,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home',[
         "title" =>"home",
-        "active" => 'home'
+        "active" => "home"
     ]);
 });
 Route::get('/about', function () {
     return view('about',[
         "title" =>"about",
-        "active" => 'aboout'
+        "active" => "about"
     ]);
 });
+
 
 Route::get('/artikel',[ArticleController::class,'article']);
 
 Route::get('/baca/{post:slug}',[ArticleController::class, 'read']);
 
-Route::get('/tanya','App\Http\Controllers\FeedbackController@index');
+Route::get('/tanya',FeedbackController::class);
 
 Route::get('/contact-us',[ContactUSController::class, 'contactUs']);
 

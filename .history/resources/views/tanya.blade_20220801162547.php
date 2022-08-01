@@ -51,11 +51,9 @@
                       <div class="col-9">
                         <label for="message" class="form-label">Pesan</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Isi pesan berupa kritik, saran atau pertanyaan soal Ambulance Hebat"></textarea>
-                        @error('subjek')
                         <div class="invalid-feedback">
                           {{ $message }}
                         </div>
-                        @enderror
                       </div>
                 </div>
                 <button class="button-more">

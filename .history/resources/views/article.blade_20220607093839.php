@@ -1,8 +1,7 @@
-@extends('layouts.main')
+@extends('layouts.article-layout')
 @section('content')
-
     <!-- hero section -->
-    <section id="hero-tentang">
+    {{-- <section id="hero-tentang">
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-md-6 mx-auto my-auto hero-tagline-tentang">
@@ -10,33 +9,42 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section id="kabar">
         <div class="container">
-            <div class="row g-5">
-                <div class="col-md-8 pb-4 mb-4">
-                    @foreach ($posts as $blog)
-                    <article class="blog-post mb-5">
-                        <img src="http://admin-ambulance-hebat-web.test/{{ $blog->img_blog }}" alt="">
-                        <h2>
-                            <a href="/baca/{{ $blog->slug }}" class="title-article"> {{ $blog->title }}</a></h2>
-                        <p>{{ $blog->excerpt}}</p>
-                        <a href="/baca/{{ $blog->slug }}" class="text-decoration-none"> Read More </a>
-                        <div class="post-meta mt-2">
-                            <span class="d-block"><a href="/authors/{{$blog->user->username}}" class="text-decoration-none">{{$blog->user->name}}</a> in <a href="/categories/{{$blog->category->name}}" class="text-decoration-none">{{ $blog->category->name }}</a></span>
-                            <span class="date-read">Jun 14 <span class="mx-1">•</span> 3 min read <span class="icon-star2"></span></span>
+            <div class="row mt-5">
+                <div class="col-lg-9 col-lg-offset-2 col-md-10 col-xs-12 mx-auto">
+                    <article class="blog-post">
+                        <h2 class="blog-post-title mb-4">{{ $posts->title }}</h2>
+                        <div class="d-flex mb-5">
+                            <div class="bio-pic mr-3">
+                                <i class="fa-solid fa-user me-2"></i> 
+                            </div>
+                            <div class="vcard">
+                                <span class="d-block">
+                                    <a href="/authors/{{$posts->user->username}}" class="text-decoration-none">{{ $posts->user->username }}</a> in <a href="/categories/{{ $posts->category->slug }}" class="text-decoration-none"> {{ $posts->category->name }}</a>
+                                </span>
+                                <span>
+                                   January 2022 
+                                </span>
+                            </div>
                         </div>
-                    </article>
-                    @endforeach
-                    <div class="p-4 mt-4">
 
-                        @include('partials.pagenav')
 
+                        <img src= "{{ asset($posts->img_blog)}}" class="img-fluid"alt="">
+                        {!! $posts->body !!}
+
+                    <div class="pt-3">
+                        <p>Kategori :
+                            <a href="/categories/{{ $posts->category->slug }}" class="text-decoration-none"> {{ $posts->category->name }}</a>
+                        </p>
                     </div>
-
+                    <a href="/artikel" class="d-block mt-5 text-decoration-none">Kembali ke Artikel</a>
+                    </article>
                 </div>
-                <div class="col-md-4">
+            </div>         
+                {{-- <div class="col-md-4">
                     <div class="position-sticky" style="top: 2rem;">
 
                         <div class="p-4 mb-3 search">
@@ -77,21 +85,6 @@
                             </ol>
                         </div>
 
-                        <div class="p-4 mb-2">
-                            <h3>Kategori Kabar</h3>
-                            <hr>
-                            @foreach ($categories as $category)
-                            <ul class="p-0">
-                                <li>
-                                    <h4>
-                                        <a href="/categories/{{ $category->slug }}" class="text-decoration-none"> {{ $category->name}}</a></h4>
-                                   
-                                </li>
-                            </ul>
-                            @endforeach
-                        </div>
-
-
                     
                       
                         <div class="p-4 mb-3">
@@ -100,8 +93,7 @@
                             <!-- <a href="https://twitter.com/intent/tweet?screen_name=dkksemarang&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @dkksemarang</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> --}}
         </div>
 
     </section>
