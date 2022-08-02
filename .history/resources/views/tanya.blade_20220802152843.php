@@ -18,13 +18,7 @@
         @if (session()->has('success'))
             <div class="alert alert-success col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
                 {{ session('success') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-        @elseif($error->any())
-        <div class="alert alert-danger col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
-          {{ 'Gagal' }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
         @endif
         <div class="container">
             <h4 class="mb-3">Tanya Kami</h4>

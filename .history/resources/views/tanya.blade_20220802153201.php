@@ -20,7 +20,7 @@
                 {{ session('success') }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-        @elseif($error->any())
+        @else
         <div class="alert alert-danger col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
           {{ 'Gagal' }}
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

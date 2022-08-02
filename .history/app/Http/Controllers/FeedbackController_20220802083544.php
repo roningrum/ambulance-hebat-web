@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Feedback;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreFeedbackRequest;
 use App\Http\Requests\UpdateFeedbackRequest;
 
 class FeedbackController extends Controller
@@ -37,7 +37,7 @@ class FeedbackController extends Controller
      * @param  \App\Http\Requests\StoreFeedbackRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreFeedbackRequest $request)
     {
         //simpan data
         $validatedData = $request->validate([
@@ -46,10 +46,8 @@ class FeedbackController extends Controller
             'subjek'=>'required',
             'pesan'=>'required'
         ]);
-        // dd($validatedData);
-        // die();
         Feedback::create($validatedData);
-        return redirect('/tanya')->with('success', 'Kritik dan saran telah kami terima. Mohon ditunggu');
+        return redirect('/tanya');
     }
 
     /**

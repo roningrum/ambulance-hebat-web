@@ -49,7 +49,7 @@ class FeedbackController extends Controller
         // dd($validatedData);
         // die();
         Feedback::create($validatedData);
-        return redirect('/tanya')->with('success', 'Kritik dan saran telah kami terima. Mohon ditunggu');
+        return redirect('/tanya');
     }
 
     /**

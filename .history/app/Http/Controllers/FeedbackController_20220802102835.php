@@ -46,10 +46,10 @@ class FeedbackController extends Controller
             'subjek'=>'required',
             'pesan'=>'required'
         ]);
-        // dd($validatedData);
-        // die();
-        Feedback::create($validatedData);
-        return redirect('/tanya')->with('success', 'Kritik dan saran telah kami terima. Mohon ditunggu');
+        dd($validatedData);
+        die();
+        // Feedback::create($validatedData);
+        // return redirect('/tanya');
     }
 
     /**

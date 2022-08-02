@@ -1,7 +1,6 @@
 @extends('layouts.main')
 @section('content')
     <!-- hero section -->
-
     <section id="hero-tentang">
         <div class="container h-100">
             <div class="row h-100">
@@ -16,15 +15,9 @@
 
     <section id="form-contact">
         @if (session()->has('success'))
-            <div class="alert alert-success col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
+            <div class="alert alert-success col-lg-8 justify-content-center ms-auto" id="success-alert" role="alert">
                 {{ session('success') }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-        @elseif($error->any())
-        <div class="alert alert-danger col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
-          {{ 'Gagal' }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-      </div>
         @endif
         <div class="container">
             <h4 class="mb-3">Tanya Kami</h4>
@@ -79,14 +72,4 @@
         </div>
 
     </section>
-  <script>
-    $(document).ready(function() {
-  $("#success-alert").hide();
-  $("#myWish").click(function showAlert() {
-    $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
-      $("#success-alert").slideUp(500);
-    });
-  });
-});
-  </script>
 @endsection
