@@ -15,6 +15,17 @@
     <!-- form section -->
 
     <section id="form-contact">
+        @if (session()->has('success'))
+            <div class="alert alert-success col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        {{-- @elseif($error->any()) --}}
+        <div class="alert alert-danger col-lg-8 justify-content-center ms-autoe" id="success-alert" role="alert">
+          {{ 'Gagal' }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        @endif
         <div class="container">
             <h4 class="mb-3">Tanya Kami</h4>
             <p class="mb-2">Kami sangat mengapresiasi saran, kritik, testimonial dan pertanyaan Anda</p>
@@ -63,18 +74,19 @@
                         @enderror
                     </div>
                 </div>
-                <button type="submit" class="button-more" id="button-submit">Kirim</button>
+                <button type="submit" class="button-more">Kirim</button>
             </form>
         </div>
 
     </section>
-    <script>
-        // $('#button-submit').click(function() {
-        //     Swal.fire(
-        //         'Good job!',
-        //         'You clicked the button!',
-        //         'success'
-        //     )
-        // })
-    </script>
+  <script>
+    $(document).ready(function() {
+  $("#success-alert").hide();
+  $("#myWish").click(function showAlert() {
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+      $("#success-alert").slideUp(500);
+    });
+  });
+});
+  </script>
 @endsection

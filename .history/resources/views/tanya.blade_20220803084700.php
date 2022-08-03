@@ -68,13 +68,13 @@
         </div>
 
     </section>
-    <script>
-        // $('#button-submit').click(function() {
-        //     Swal.fire(
-        //         'Good job!',
-        //         'You clicked the button!',
-        //         'success'
-        //     )
-        // })
-    </script>
+  <script>
+    $('#button-submit').click(function(){
+        Swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
+    })
+  </script>
 @endsection

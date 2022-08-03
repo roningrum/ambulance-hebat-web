@@ -17,6 +17,7 @@
 
     <!-- mystyle -->
     <link rel="stylesheet" href=" {{asset('css/style.css')}}">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href=" https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
 
     <title>Ambulance Hebat</title>
@@ -25,8 +26,6 @@
 <body>
 
     @include('partials.navbar')
-
-    @include('sweetalert::alert')
     
     @yield('content')
 
@@ -39,6 +38,8 @@
 
     <script src="{{ asset('js/script.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
 
 </body>
 

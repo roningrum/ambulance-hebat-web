@@ -26,7 +26,7 @@
 
     @include('partials.navbar')
 
-    @include('sweetalert::alert')
+    @include('sweetalert:alert')
     
     @yield('content')
 

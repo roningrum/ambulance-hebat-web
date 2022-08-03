@@ -54,7 +54,7 @@ class FeedbackController extends Controller
             return redirect('/tanya')->with('success', 'Kritik dan saran telah kami terima. Mohon ditunggu');
         }
         catch(Exception $e){
-            return redirect()->back()->with('error', 'silakan cek kembali');
+            return redirect('/tanya')->with('error', 'silakan cek kembali');
         }
        
        
