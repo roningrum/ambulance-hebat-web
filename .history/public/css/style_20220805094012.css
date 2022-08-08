@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: -999;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background-color: #ffffff;
+}
+
+/* navbar */
+.navbar{
+    top: 0;
+    transition: all 0.3s ease-out;
+}
+
+.navbar .sticky{
+    padding: 10px 0;
+    background-color: #CF1B1B;
+    color: #fcdcdc;
+}
+
+.navbar .sticky::after{
+    content: "";
+    opacity: 0.5;
+}
+
+.navbar.fixed-top{
+    position: fixed;
+    background-color: #FD2E2E;
+    color: white;
+}
+.navbar-brand{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-link{
+    font-size: 16px;
+}
+
+.nav-link.active{
+    font-weight: 600;
+}
+
+.button-secondary{
+    width: 148px;
+    height: 48px;
+   background-color: #fff;
+   color:#CF1B1B;
+   border: none;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 8px;
+   transition-duration: 0.4s;
+   cursor: pointer;
+}
+
+.button-secondary:hover{
+    width: 148px;
+    height: 48px;
+    background-color: #CF1B1B;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* hero */
+#hero{
+    background: linear-gradient(88deg, #CF1B1B 2%, #FD2E2E 55%, #FF5E5E 100%);
+    width: 100%;
+    margin: auto;
+}
+#hero .container{
+    width: 100%;
+    padding-bottom: 100px;
+    padding-top: 100px;
+ 
+}
+.hero-tagline h1{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+    color: #fff;
+}
+.hero-tagline p{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 1.5em;
+    line-height: 140%;
+    color: #fff;
+}
+
+.hero-tagline img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+.button-lg-primary{
+    width: 60%;
+    height: 56px;
+    background: #fff;
+    color: #FD2E2E;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.img-hero{
+    width: 100%;
+}
+
+/* about */
+#desc{
+    width: 100%;
+}
+.desc-info h1{
+    color: #FD2E2E;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.desc-info p{
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.button-more{
+    background: #FD2E2E;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    height: 64px;
+    margin-top: 2em;
+    border: none;
+    border-radius: 8px;
+}
+/* service */
+#service{
+    padding-top: 100px;
+    padding-bottom: 120px ;
+}
+.service-headline h2{
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 120%;
+    color: #CF1B1B;
+}
+.card-layanan h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 140%;
+    margin-top: 12px;
+    color: #1d1c1c;
+}
+.service-headline p{
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0em;
+}
+
+.card-layanan{
+    width: 100%;
+    height: 450px;
+    background-color: #FFE6E6;
+    border-radius: 10px;
+    margin-right: 64px;
+    padding: 24px;
+}
+
+.circle-icon{
+    width: 125px;
+    height: 125px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.card-layanan h3{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+}
+.card-layanan p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 12px;
+    letter-spacing: 0em;
+}
+
+/* card-layanan hover */
+.card-layanan:hover{
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    margin-right: 64px;
+    padding: 24px;
+    box-shadow: 0 0 7px 3px #fd2e2e96;
+   
+}
+
+/* dashboard */
+#dashboard{
+    background-color: #CF1B1B;
+    width: 100%;
+}
+.counter-headline h1{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    line-height: 58px;
+    letter-spacing: 0em;
+}
+
+.counter{
+    font-size: 56px;
+    margin-top: 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.counter-headline p{
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    color: #fff;
+    letter-spacing: 0em;
+}
+
+/* artikel */
+#artikel{
+    width: 100%;
+}
+
+.artikel-style h1{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #CF1B1B;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.desc-info h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    color: #1d1c1c;
+    text-align: left;
+}
+
+/* tanya kami */
+#tanya-kami{
+    padding: 100px 0;
+}
+.card-kontak{
+    width: 100%;
+    background-color: #FFE6E6;
+    border-radius: 20px;
+}
+.button-contact{
+    background: #FD2E2E;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    height: 64px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 8px;
+}
+.headline-ask{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background:#CF1B1B;
+}
+
+.footer-aha h1{
+    color: #fff;
+    font-family: Mulish;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footer-aha h3{
+    font-size: 20px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footer-aha h6{
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFE6E6;
+}
+.footer-aha .contact{
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFE6E6; 
+}
+.footer-aha .logo{
+    color: #fff;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.footer-aha .social-media{
+    color: #fff;
+    font-family: Mulish;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.copyright{
+    bottom: 10%;
+    color: #ffe6e69a;
+    text-align: center;
+}
+
+footer a{
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #FFE6E6;
+}
+.footer-cta{
+    list-style-type: none;
+    padding: 0;
+}
+.footer-cta-item{
+    margin-top: 4px;
+}
+
+/* Tentang html */
+#hero-tentang{
+    background: linear-gradient(88deg, #CF1B1B 2%, #FD2E2E 55%, #FF5E5E 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-tagline-tentang h1{
+    font-family: Mulish;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFE6E6;
+
+}
+
+#info-aha{
+   padding-top: 80px;
+   padding-bottom: 100px;
+}
+#layanan-aha{
+    padding: 80px 0;
+}
+
+.layanan-style h2{
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #CF1B1B;
+}
+/* Tentang Session */
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 8px;
+    flex: 0 1 auto;
+    height: 150px;
+}
+
+.box h3{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.circle-icon-layanan{
+    width: 120px;
+    height: 120px;
+    background-color: #fcdcdc;
+    border-radius: 50%;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.178);
+}
+
+/* Peta  */
+#peta{
+ width: 100%;
+ height: 100vh;
+}
+
+
+.card-tim-ahha{
+    width: 100%;
+    height: 727px;
+    background-color: #FD2E2E;
+    border-radius: 10px;
+    margin-right: 64px;
+    padding: 24px;
+}
+
+.card-tim-ahha h1{
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFE6E6;
+}
+
+.sentence-h1{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.mapBox{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    border: 0;
+    z-index: 10;
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 90;
+}
+
+/* Galery Ambulance Hebat */
+#galery{
+    width: 100%;
+    padding: 200px 0;
+}
+
+.galery-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: #CF1B1B;
+    margin-bottom: 50px;
+}
+
+.galery img{
+    width: 100%;
+    height: 361px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.galery .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.img-property{
+    column-fill: auto;
+}
+
+#call-ambulance-hotline{
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fcdcdc;
+}
+
+.hotline h1{
+    font-family: Mulish;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #CF1B1B;
+}
+
+.hotline a{
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #CF1B1B;
+
+}
+
+/* kabar */
+#kabar{
+    padding: 50px 0;
+}
+
+article{
+    display: block;
+}
+
+article img{
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 24px ;
+}
+
+.blog-post{
+    margin-bottom: 48px;
+}
+
+article h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #CF1B1B;
+    text-align: left;
+    text-decoration: none;
+}
+article .title-article{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #CF1B1B;
+    text-align: left;
+    text-decoration: none;
+}
+article .title-article:hover{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 90, 72);
+    text-align: left;
+    text-decoration: none;
+}
+article .img-size{
+    max-width: 100%;
+    
+}
+article p{
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #1d1c1c;
+}
+
+.list-recent-post p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #7a7a7a;
+}
+
+.blog-post-meta{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #7a7a7a;
+}
+
+/* Icon */
+
+.fa-solid{
+    color: #CF1B1B;
+}
+
+.fa-regular{
+    color: #CF1B1B;
+}
+
+.list-recent-post a{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #FD2E2E;
+}
+
+#kabar li{
+    display: list-item;
+   list-style-type: none;
+}
+
+#kabar h3{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1d1c1c;
+}
+
+#kabar ol{
+    padding-left:0;
+}
+
+.btn-search{
+    background-color: #FD2E2E;
+}
+
+.list-recent-post p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* tanya kami */
+#form-contact{
+    padding: 80px 0;
+}
+
+#form-contact h4{
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#form-contact p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* tanya kami */
+input[type=text]{
+    padding: 10px;
+    height: 56px;
+}
+
+input[type=email]{
+    padding: 10px;
+    height: 56px;
+}
+
+textArea{
+    height: 300px;
+}
+
+/* kontak kami */
+
+#kontak-kami{
+    padding: 100px 100px;
+}
+
+#kontak-kami h1{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #FD2E2E;
+}
+
+#kontak-kami h3{
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;   
+    color: #141414;
+}
+
+.font-style-contact{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    color: #CF1B1B;
+    text-decoration: none;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-color{
+    background-color: #CF1B1B;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+.bg-transparent{
+    transition: all ease-in-out 0.3s;
+}
+
+@media only screen and (max-width:768px) {
+    #hero .img-hero{
+        display: none;
+    }
+    #desc img{
+        width: 100%;
+    }
+}
+@media only screen and(max-width:575px) {
+    #hero{
+        height: 80vmin;
+        padding: 0 100px;
+    }
+    .desc-info p{ 
+        font-size: 0.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .card-kontak{
+        width: 80vmin;
+        height: 80vmin;
+    }
+    .card-kontak img{
+        width: 80%;
+    }
+    .card-kontak h2{
+        font-size: 1rem;
+    }
+    #dashboard{
+        height: 100vh;
+    }
+
+    .mapBox{
+        position: absolute;
+        margin: 10px !important;
+    }
+    
+    .mapBox > iframe{
+        width: 100% !important;
+        height: auto;
+        min-height: calc(100vh - 20px);
+    }
+}
+@media only screen and (min-width:768px) {
+    #hero .img-hero{
+        width: 100%;
+
+    }
+
+    #desc img{
+        width: 100%;
+    }
+}
