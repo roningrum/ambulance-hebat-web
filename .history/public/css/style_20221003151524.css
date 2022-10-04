@@ -1,0 +1,882 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+/* navbar */
+.navbar{
+    background: linear-gradient( 90deg, #cf1b1b, #fd2e2e, #ff5e5e);
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .navbar .sticky{
+    padding: 10px 0;
+    background-color: #cf1b1b;
+    color: #fcdcdc;
+  }
+  
+  .nav-link.active {
+    font-weight: 600;
+  }
+  
+  .button-secondary {
+    width: 148px;
+    height: 48px;
+    background-color: #fff;
+    color: #cf1b1b;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button-secondary:hover {
+    width: 148px;
+    height: 48px;
+    background-color: #cf1b1b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+/* hero */
+#hero {
+    background: linear-gradient(88deg, #cf1b1b 2%, #fd2e2e 55%, #ff5e5e 100%);
+    width: 100%;
+    margin: auto;
+}
+h1 {
+    font-weight: 700;
+}
+.hero-tagline p {
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero-tagline img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+.button-lg-primary {
+    width: 60%;
+    height: 56px;
+    background: #fff;
+    color: #fd2e2e;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+.img-hero {
+    width: 100%;
+}
+
+/* about */
+
+#info-about h2{
+    color: #CF1B1B;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#info-about p{
+    margin-top: 16px;
+
+}
+
+.watch-video i{
+    font-size: 32px;
+    transition: 0.32s;
+    color: #FD2E2E;
+  }
+   .watch-video i{
+    font-size: 32px;
+    transition: 0.32s;
+    color: #FD2E2E;
+  }
+  .watch-video a{
+    margin-left: 8px;
+    color: #FD2E2E;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+#desc {
+    padding-top: 50px;
+}
+.desc-info h1 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.desc-info p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.button-more {
+    background: #fd2e2e;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    height: 64px;
+    margin-top: 2em;
+    border: none;
+    border-radius: 8px;
+}
+/* service */
+.container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+.outer-box{
+    padding-top: 100px;
+}
+
+.icon-box{
+    text-align: center;
+    background: #fff;
+    padding: 40px 30px;
+    width: 100%;
+    border: 1px solid #eef0ef;
+}
+
+.circle-box {
+    width: 100px;
+    height: 100px;
+    background-color: #FFE6E6;
+    border-radius: 50%;    
+}
+.circle-box img{
+    width: 64px;
+    height: 64px;
+}
+h3{
+    font-weight: 600;
+    margin-top: 1.75rem;
+    color: #0B0F0F;
+}
+
+.title-benefit h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #CF1B1B ;
+}
+.title-benefit p{
+    font-size: 1.15rem;
+    color: #060606 ;
+    font-weight: 500;
+}
+
+
+
+/* dashboard */
+.counts {
+    padding: 30px 0;
+  }
+  
+.counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  
+  .counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff8f8;
+  }
+
+  #statistic{
+    margin-top: 100px;
+    padding-top: 56px;
+    background-color: #CF1B1B;
+  }
+  .content p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.15rem;
+  }
+  .content h3{
+    color: #f0eeee;
+    font-weight: 600;
+    font-size: 2.75rem;
+  }
+
+/* artikel */
+
+.newest-title h2{
+    color: #fd2e2e;
+    font-weight: 600;
+}
+
+.card {
+    border: 0;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #1d1c1c;
+    font-weight: 400;
+}
+
+.card-body h5 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.badge {
+    font-size: 1rem;
+    font-weight: 500;
+    background: #f03737 !important;
+}
+
+.card-body a {
+    color: #cf1b1b;
+    text-decoration: none;
+}
+.card-body a:hover {
+    color: #f03737;
+    font-weight: 600;
+    text-decoration: none;
+}
+.card-body a:active {
+    color: #fd2e2e;
+}
+
+.desc-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    color: #1d1c1c;
+    text-align: left;
+}
+
+/* tanya kami */
+#tanya-kami {
+    padding: 100px 0;
+}
+.card-kontak {
+    width: 100%;
+    background-color: #ffe6e6;
+    border-radius: 20px;
+}
+.button-contact {
+    background: #fd2e2e;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    height: 64px;
+    margin-top: 60px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* footer */
+
+.footer-content {
+    background-color: #f9fafd;
+    font-size: 1rem;
+    color: #312f36;
+    padding: 70px 0;
+}
+
+.footer-content h3 {
+    color: #303030;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.footer-content .brand {
+    color: #fd2e2e;
+    font-size: 1.75rem;
+}
+.footer-content a {
+    color: #312f36;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.footer-content a:hover {
+    color: #fd2e2e;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.footer-content a:active {
+    color: #cf1b1b;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-content .widget {
+    margin-bottom: 24px;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-content .widget i {
+    width: 64px;
+    height: 64px;
+    color: #cf1b1b;
+    padding-right: 5px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-content .nav-link {
+    margin-bottom: 0.5rem;
+    padding: 0;
+}
+
+.footer-content .nav-link .active {
+    background-color: #fd2e2e;
+}
+
+.list-unstyled {
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-content .social li {
+    display: inline-block;
+}
+.copyright {
+    margin-top: 3rem;
+    color: #c6c6c8;
+}
+.copyright a {
+    color: #cb4543;
+}
+.widget .logo-text img {
+    display: inline-block;
+}
+.widget .logo-text h3 {
+    display: inline-block;
+}
+
+/* Tentang html */
+#hero-tentang {
+    background: linear-gradient(90deg, #cf1b1b 2%, #fd2e2e 55%, #ff5e5e 100%);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#hero-tentang .container{
+    z-index: 2;
+    position: relative;
+}
+
+
+#info-aha {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+#layanan-aha {
+    padding: 80px 0;
+}
+
+.layanan-style h2 {
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #cf1b1b;
+}
+/* Tentang Session */
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 8px;
+    flex: 0 1 auto;
+    height: 150px;
+}
+
+.box h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.circle-icon-layanan {
+    width: 120px;
+    height: 120px;
+    background-color: #fcdcdc;
+    border-radius: 50%;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.178);
+}
+
+.owl-prev{
+    left: -30px;
+  }
+  .owl-next{
+    right: -30px;
+  }
+  .owl-prev, .owl-next{
+    top: 90px;
+    position: absolute;
+  }
+  .owl-prev span, .owl-next span{
+    font-size: 80px;
+    color: #CF1B1B;
+  }
+  .owl-theme, .owl-nav[class="owl-"]:hover{
+    background: transparent
+  }
+
+/* Peta  */
+#peta {
+  padding-top: 100px;
+}
+
+.card-tim-ahha {
+    width: 100%;
+    height: 727px;
+    background-color: #fd2e2e;
+    border-radius: 10px;
+    margin-right: 64px;
+    padding: 24px;
+}
+
+.card-tim-ahha h1 {
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffe6e6;
+}
+
+.sentence-h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mapBox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.marker {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+    white-space: pre-wrap;
+}
+
+/* .mapBox iframe{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 90;
+} */
+
+/* Galery Ambulance Hebat */
+#galery {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.galery-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+    text-align: center;
+    color: #cf1b1b;
+    margin-bottom: 50px;
+}
+
+.galery img {
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.galery .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.img-property {
+    column-fill: auto;
+}
+
+#call-ambulance-hotline {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fcdcdc;
+}
+
+.hotline h1 {
+    font-family: Mulish;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #cf1b1b;
+}
+
+.hotline a {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #cf1b1b;
+}
+
+/* kabar */
+#kabar {
+    padding: 50px 0;
+}
+
+article {
+    display: block;
+}
+
+article img {
+    width: 100%;
+    object-fit: fill;
+    margin-bottom: 24px;
+}
+
+.blog-post {
+    margin-bottom: 48px;
+}
+
+article h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #cf1b1b;
+    text-align: left;
+    text-decoration: none;
+}
+article .title-article {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #cf1b1b;
+    text-align: left;
+    text-decoration: none;
+}
+article .title-article:hover {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 90, 72);
+    text-align: left;
+    text-decoration: none;
+}
+article .img-size {
+    max-width: 100%;
+}
+article p {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #1d1c1c;
+}
+
+.list-recent-post p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #7a7a7a;
+}
+
+.blog-post-meta {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 1rem;
+    color: #7a7a7a;
+}
+
+/* Icon */
+
+.fa-solid {
+    color: #cf1b1b;
+}
+
+.fa-regular {
+    color: #cf1b1b;
+}
+
+.list-recent-post a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-decoration: none;
+    color: #fd2e2e;
+}
+
+#kabar li {
+    display: list-item;
+    list-style-type: none;
+}
+
+#kabar h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1d1c1c;
+}
+
+#kabar ol {
+    padding-left: 0;
+}
+
+.btn-search {
+    background-color: #fd2e2e;
+}
+
+.list-recent-post p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* tanya kami */
+#form-contact {
+    padding: 80px 0;
+}
+
+#form-contact h4 {
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#form-contact p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* tanya kami */
+input[type="text"] {
+    padding: 10px;
+    height: 56px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    height: 56px;
+}
+
+textArea {
+    height: 300px;
+}
+
+/* kontak kami */
+
+#kontak-kami {
+    padding: 100px 100px;
+}
+
+#kontak-kami h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    color: #fd2e2e;
+}
+
+#kontak-kami h3 {
+    font-family: Mulish;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: #141414;
+}
+
+.font-style-contact {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0em;
+    color: #cf1b1b;
+    text-decoration: none;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav-color {
+    background-color: #cf1b1b;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+}
+.bg-transparent {
+    transition: all ease-in-out 0.3s;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: rgb(207, 205, 205);
+    font-weight: 400;
+  }
+.breadcrumb a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .contact-info i{
+    font-size: 1rem;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background-color: #CF1B1B;
+    color: #fff;
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .contact-info h4{
+    font-size: 1.15rem;
+    margin-top: 0;
+    font-weight: 600;
+    padding: 0 0 0 60px;
+  }
+  
+  .contact-info p{
+    font-size: 1rem;
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+
+@media only screen and (max-width: 768px) {
+    #hero .img-hero {
+        display: none;
+    }
+    #desc img {
+        width: 100%;
+    }
+}
+@media only screen and(max-width:575px) {
+    #hero {
+        height: 80vmin;
+        padding: 0 100px;
+    }
+    .desc-info p {
+        font-size: 0.5rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    .card-kontak {
+        width: 80vmin;
+        height: 80vmin;
+    }
+    .card-kontak img {
+        width: 80%;
+    }
+    .card-kontak h2 {
+        font-size: 1rem;
+    }
+    #dashboard {
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #hero .img-hero {
+        width: 100%;
+    }
+
+    #desc img {
+        width: 100%;
+    }
+}
